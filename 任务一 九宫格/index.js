@@ -16,7 +16,7 @@ function load () {
     }
     //生成不重复的随机数组函数
     function getNumNoRepeat() {
-        var maxTimes = 20;
+        var maxTimes = 5;
         do{
             var num = Math.floor(Math.random()*9);
             if(-1 == randomList.indexOf(num)){//数组中不存在
@@ -26,7 +26,6 @@ function load () {
             maxTimes--;
         }while (maxTimes);
     }
-    console.log(randomList);
 
     //随机盒子与随机数匹配
     for (var i = 0; i < 3; i++) {
